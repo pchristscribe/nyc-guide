@@ -23,7 +23,7 @@ class BoroughView(View):
                 },
         )
 
-#just copied above class, changing template and adding the get for the activity and the next level down (activities)in the boroughs dictionary
+#just copied above class, changing template and adding the get for the activity and the next level down (venues)in the boroughs dictionary
 class ActivityView(View):
     def get (self, request, borough, activity):
         return render(
@@ -37,7 +37,7 @@ class ActivityView(View):
        )
     
 
-#just copied above class, changing template and adding the get for the venue and next level down (venues) in the boroughs dictionary
+#just copied above class, changing template and adding the get for the venue and next level down (venue_description) in the boroughs dictionary
 class VenueView(View):
     def get (self, request, borough, activity, venue):
         return render(
