@@ -46,6 +46,8 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
+##### 5. Open Your Favorite Browser
+
 And go to `http://localhost:8000`
 
 [EOF]
