@@ -28,7 +28,7 @@ venv\Scripts\activate.ps1
 venv\Scripts\activate.bat
 ```
 
-- On Linux or MacOS
+- If Using Linux or MacOS
 
 ```bash
 . venv/bin/activate
