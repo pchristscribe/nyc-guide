@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venue</title>
-   
-</head>
-<body>
-    <h1>{{venue | title}}</h1>
-     <p>{{venue_description}}</p>
-     <a class="btn" href="/">Start Over</a>
-</body>
-</html>
+{% extends 'mymaster.html' %}
+
+{% block mymessage %}
+    <div class="card" style="width: 55%;">
+        <img class="card-img-top" src = {{img_link}} alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">{{venue | title}}</h5>
+        <p class="card-text">{{venue_description}}</p>
+        <a href="#" class="btn btn-primary">Start Over</a>
+        </div>
+    </div>
+{% endblock %} 
+
+  

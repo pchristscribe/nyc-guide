@@ -1,11 +1,20 @@
-<h1>{{ borough | title }}</h1>
+{% extends 'mymaster.html' %}
 
-<ul>
-    {% for activity in activities %}
-    <li>
-        <a href="{% url 'activity' borough activity %} "
-            >{{ activity|title }}</a>
-    </li>
-    {% endfor %}
-</ul>
-<a class="btn" href="/">Start Over</a>
+{% block mymessage %}
+<div class="bg-image" 
+     style="background-image: url('https://cdn.theculturetrip.com/wp-content/uploads/2018/11/shutterstock_139844653-featuredimage.jpg');
+            height: 100vh;">
+
+    <h1>{{ borough | title }}</h1>
+
+    <ul>
+        {% for activity in activities %}
+        <li>
+            <a href="{% url 'activity' borough activity %} "
+                >{{ activity|title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/" class="btn btn-primary">Start Over</a>
+</div>
+{% endblock %} 

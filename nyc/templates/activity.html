@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Activity</title>
-</head>
-<body>
+
+{% extends 'mymaster.html' %}
+
+{% block mymessage %}
+<div class="bg-image" 
+     style="background-image: url('https://cdn.theculturetrip.com/wp-content/uploads/2018/11/shutterstock_139844653-featuredimage.jpg');
+            height: 100%;">
+
     <h1> {{activity|title}}</h1>
     <ul> 
         {% for venue in venues %} 
@@ -15,7 +14,6 @@
     </li>
         {% endfor %}
     </ul>
-    <a class="btn" href="/">Start Over</a>
-</body>
-</html>
-
+    <a href="/" class="btn btn-primary">Start Over</a>
+</div>
+{% endblock %} 

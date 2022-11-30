@@ -47,6 +47,7 @@ class VenueView(View):
                 'borough': borough, 
                 'activity': activity,
                 'venue': venue,
+                'img_link': boroughs[borough][activity][venue]['img_link'],
                 'venue_description': boroughs[borough][activity][venue]['description'],
                 }
         )
