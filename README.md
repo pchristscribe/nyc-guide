@@ -1,36 +1,51 @@
-# New York City Guide - Django Project
+# New York City Guide, A Site Built on Django
 
-## To start building the project:
+## A Project by P. Christopher Schreiber and Edward Cobbs
 
-### 1. Create a virtual environment
+### To start building the project
 
-At the root folder of the repository run:
-```
+#### 1. Create a virtual environment
+
+At the root folder of the repo, execute:
+
+```bash
 python3 -m venv venv
 ```
-Make sure to call your virtual environment "venv"
 
-### 2. Run virtual environment
-#### On Windows:
-Windows Powershell users:
+(Your python executable may be called something different depending on your installation.)
+
+#### 2. Run virtual environment
+
+- If Using Windows Powershell
+
+```powershell
+venv\Scripts\activate.ps1
 ```
+
+- If Using Windows Command Prompt
+
+```CMD
 venv\Scripts\activate.bat
 ```
-Bash users:
+
+- On Linux or MacOS
+
+```bash
+. venv/bin/activate
 ```
-source venv/Scripts/activate
-```
-#### On Unix or MacOS:
-```
-source venv/bin/activate
-```
-### 3. Install dependencies
-```
+
+##### 3. Install dependencies
+
+```any
 pip install -r requirements.txt
 ```
-### 4. Run Django
-```
+
+##### 4. Run Django
+
+```any
 python manage.py runserver
 ```
+
 And go to `http://localhost:8000`
-# nyc-guide
+
+[EOF]
